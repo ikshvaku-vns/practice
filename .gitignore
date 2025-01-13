@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-projects
-projects.pub
+project
+project.pub
