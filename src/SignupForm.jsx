@@ -6,6 +6,7 @@ export default function SignupForm() {
     lastname: "",
     email: "",
     gender: "",
+    terms: "",
   });
   const handleChange = (evt) => {
     const changeField = evt.target.name;
@@ -15,7 +16,13 @@ export default function SignupForm() {
     });
   };
   const submitForm = () => {
-    console.log(form.firstname, form.lastname, form.email, form.gender);
+    console.log(
+      form.firstname,
+      form.lastname,
+      form.email,
+      form.gender,
+      form.terms
+    );
   };
 
   return (
@@ -55,8 +62,7 @@ export default function SignupForm() {
           type="radio"
           name="gender"
           id="male"
-          value={"male"}
-          checked={form.gender === "male"}
+          value="male"
           onChange={handleChange}
         />
         <label htmlFor="male">Male</label>
@@ -65,10 +71,19 @@ export default function SignupForm() {
           name="gender"
           id="female"
           value={"female"}
-          checked={form.gender === "female"}
           onChange={handleChange}
         />
         <label htmlFor="female">Female</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="check"
+          value="agreed"
+          name="terms"
+          onChange={handleChange}
+        />
+        <label htmlFor="check">Agree to terms</label>
       </div>
 
       <button onClick={submitForm}>Submit</button>
