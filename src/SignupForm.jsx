@@ -57,7 +57,7 @@ export default function SignupForm() {
         name="email"
         className="input"
       />
-      <div>
+      <div className="radio">
         <input
           type="radio"
           name="gender"
@@ -75,7 +75,7 @@ export default function SignupForm() {
         />
         <label htmlFor="female">Female</label>
       </div>
-      <div>
+      <div className="checkbox">
         <input
           type="checkbox"
           id="check"
