@@ -5,27 +5,53 @@ body {
   align-items: center;
 }
 
+#heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 2rem;
+}
+
 .signup {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.signupform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a4bef3;
   border: 2px solid black;
   border-radius: 10px;
   padding: 50px 0px;
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 400px;
+  box-shadow: 2px 2px 50px rgba(9, 8, 8, 0.3);
 }
 button {
   background-color: rgb(19, 219, 225);
   cursor: pointer;
-  width: 80px;
   height: 40px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: rgb(26, 111, 111);
 }
 .input {
+  width: 90%;
   padding: 10px;
-  margin: 10px;
-  width: 200px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .radio {
